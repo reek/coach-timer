@@ -16,12 +16,12 @@ Application for training sessions, build with Web technologies, [Cordova](https:
 </p>
 
 ### Android
-- [Download]() and allow installation from `unknown sources` then install `coach-timer.apk`.
+- [Download](https://reek.github.io/coach-timer/coach-timer.apk) and allow installation from `unknown sources` then install `coach-timer.apk`.
 
 ![unknown sources](https://static.apkpure.com/www/static/imgs/unknown_sources.jpg)
 
 ### Browser
-- Navigate to Web App [Demo]()
+- Navigate to Web App [Demo](https://reek.github.io/coach-timer/)
 
 ## Features
 - Responsive Desktop and Mobile.
