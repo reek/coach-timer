@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Coach Timer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- timer -->
+    <canvas title="Stat/Pause" id="timer" width="400" height="400"></canvas>
+
+    <!-- commands buttons -->
+    <div id="commands">
+        <button id="reset"></button>
+        <button id="option"></button>
+    </div>
+
+    <!-- options panel -->
+    <div id="options-panel">
+        <h1>Options</h1>
+        <div class="option">
+            <div class="name">
+                <label for="workout">workout <span>[23:59:55]</span></label>
+            </div>
+            <div class="value">
+                <input type="text" id="workout" name="workout" value="00:01:00" disabled>
+            </div>
+        </div>
+        <div class="option">
+            <div class="name">
+                <label for="work">work <span>[00:59:55]</span></label>
+            </div>
+            <div class="value">
+                <input type="text" id="work" name="work" value="00:00:20" pattern="^[0]{2}:[0-5][0-9]:[0-5][0-5]$">
+                <button class="work plus"></button><button class="work minus"></button>
+            </div>
+        </div>
+        <div class="option">
+            <div class="name">
+                <label for="rest">rest <span>[00:59:55]</span></label>
+            </div>
+            <div class="value">
+                <input type="text" id="rest" name="rest" value="00:00:10" pattern="^[0]{2}:[0-5][0-9]:[0-5][0-5]$">
+                <button class="rest plus"></button><button class="rest minus"></button>
+            </div>
+        </div>
+        <div class="option">
+            <div class="name">
+                <label for="sets">sets <span>[number>0]</span></label>
+            </div>
+            <div class="value">
+                <input type="number" id="sets" name="sets" min="1" value="2" pattern="[0-9]+">
+                <button class="sets plus"></button><button class="sets minus"></button>
+            </div>
+        </div>
+        <div class="option">
+            <div class="name">
+                <label for="alert">alert <span></span></label>
+            </div>
+            <div class="value">
+                <select name="alert" id="alert">
+                    <option name="alert" value="voice" selected>voice</option>
+                    <option name="alert" value="vibrate">vibrate</option>
+                    <option name="alert" value="whistle">whistle</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!--         
+        <div class="option">
+            <button id="default">default</button>
+            <button id="import">import</button>
+            <button id="export">export</button>
+        </div>
+
+        <div class="option">
+            <select name="programs" id="programs">
+                <option value="">20/60/10</option>
+                <option value="">20/45/10</option>
+                <option value="">20/30/10</option>
+                <option value="">10/60/10</option>
+                <option value="">10/45/10</option>
+                <option value="">10/30/10</option>
+            </select>
+            <label for="programs">programs</label>
+        </div> 
+        -->
+    </div>
+
+
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

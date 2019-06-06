@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Coach Timer",
+  "short_name": "Coach Timer",
+  "version": "io.cordova.coachtimer",
+  "description": "Workout repeat application.",
+  "author": "Ricardo Reves",
+  "icons": [],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}
