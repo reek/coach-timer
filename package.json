@@ -27,7 +27,7 @@
   "dependencies": {
     "cordova": "^9.0.0",
     "cordova-android": "^7.1.4",
-    "cordova-browser": "^5.0.4",
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
